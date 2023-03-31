@@ -1,0 +1,236 @@
+/* Path: css\style.css */
+body {
+    background-color: #202124;
+    overflow: hidden;
+    user-select: none;
+}
+
+#bodylayout {
+    color: #d6d6d7;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 0;
+    position: relative;
+    left: 2em;
+}
+
+#widgetalign {
+    display: flex;
+    
+}
+
+#timer-text {
+    color: #d6d6d7;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 0;
+    position: relative;
+}
+
+#timer-text > h2 {
+    font-size: 5.5em;
+    position: relative;
+    z-index: 1;
+    top: 0.15em;
+    left: 0.2em;
+}
+
+#timer-text > h3 {
+    font-size: 4.5em;
+    position: relative;
+    z-index: 1;
+    top: 0.15em;
+    left: 0.25em;
+}
+
+#timer-bg {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #323639;
+    text-align: center;
+    z-index:0;
+    position: absolute;
+    height: 6.4em;
+    width: 20em;
+    top: 4.5em;
+}
+
+#timer-bg > div {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #d6d6d7;
+    text-align: center;
+    z-index:0;
+    position: absolute;
+    height: 6.4em;
+    width: 0.5em;
+    top: 0;
+}
+
+#weather-text {
+    color: #d6d6d7;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 0;
+    position: relative;
+}
+
+#weather-text > h2 {
+    font-size: 5.5em;
+    position: relative;
+    z-index: 1;
+    top: 0.135em;
+    left: 0.85em;
+}
+
+#weather-text > h3 {
+    font-size: 4.5em;
+    position: relative;
+    z-index: 1;
+    top: 0.145em;
+    left: 1.04em;
+}
+
+#weather-bg {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #323639;
+    text-align: center;
+    z-index:0;
+    position: absolute;
+    height: 6.4em;
+    width: 16.5em;
+    top: 4.5em;
+    left: 25em;
+}
+
+#weather-bg > div {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #d6d6d7;
+    text-align: center;
+    z-index:0;
+    position: absolute;
+    height: 6.4em;
+    width: 0.5em;
+    top: 0;
+}
+
+
+
+#searchbtn {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #323639;
+    padding: 0.5em;
+    height: 2.5em;
+    position: relative;
+    width: 2.5em;
+    z-index: 1;
+    transition: width 0.7s ease;
+}
+
+#searchbtn:hover {
+    width: 30em;
+}
+
+#searchbtn:hover > img{
+    opacity: 0.1;
+}
+
+#searchbar {
+    opacity: 0;
+    z-index: 0;
+    position: absolute;
+    top: 1em;
+    left: 5em;
+    transition: opacity 0.4s ease;    
+}
+
+#search {
+    color: #d6d6d7;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    position: relative;
+    z-index: 1;
+    border: 0;
+    top: auto;
+    bottom: auto;
+    background-color: transparent;
+}
+
+#search:focus {
+    outline: none;
+}
+
+#searchbtn:hover > #searchbar {
+    opacity: 1;
+}
+
+.bookmarkcategory {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: #d6d6d7;
+    font-size: 1.5em;
+    position: relative;
+    z-index: 1;
+    border: 0;
+    width: 8em;
+    height: 23em;
+    top: 1.7em;
+    margin-right: auto;
+    background-color: #323639;
+}
+
+#top {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #d6d6d7;
+    z-index:0;
+    position: absolute;
+    height: 0.5em;
+    width: 100%;
+
+}
+
+.bookmarkcategory > h2 {
+    font-size: 1.2em;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.bookmarkcategory > ul {
+    line-height: 1.5em;
+    list-style-type: none;
+    position: relative;
+    z-index: 1;
+    top: 0.5em;
+    left: -1em;
+    
+}
+
+.bookmarkcategory > ul > li > a {
+    color: #d6d6d7;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    padding: 0.6em;
+}
+
+.bookmarkcategory > ul > li > a:hover {
+    color: #d6d6d7;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+
