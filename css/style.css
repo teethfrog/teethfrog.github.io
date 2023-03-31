@@ -11,6 +11,8 @@ body {
     line-height: 0;
     position: relative;
     left: 2em;
+    opacity: 0;
+    transition: opacity 2s ease;
 }
 
 #widgetalign {
@@ -175,12 +177,13 @@ body {
     border-radius: 10px;
     color: #d6d6d7;
     font-size: 1.5em;
-    position: relative;
+    position: absolute;
     z-index: 1;
     border: 0;
     width: 8em;
     height: 23em;
     top: 1.7em;
+    margin-left: 67.8em;
     margin-right: auto;
     background-color: #323639;
 }
@@ -197,7 +200,7 @@ body {
 
 }
 
-.bookmarkcategory > h2 {
+.bookmarkcategory > div > h2 {
     font-size: 1.2em;
     position: relative;
     z-index: 1;
@@ -206,7 +209,7 @@ body {
     margin-bottom: 0.5em;
 }
 
-.bookmarkcategory > ul {
+.bookmarkcategory > div > ul {
     line-height: 1.5em;
     list-style-type: none;
     position: relative;
@@ -216,7 +219,7 @@ body {
     
 }
 
-.bookmarkcategory > ul > li > a {
+.bookmarkcategory > div > ul > li > a {
     color: #d6d6d7;
     text-decoration: none;
     position: relative;
@@ -224,7 +227,7 @@ body {
     padding: 0.6em;
 }
 
-.bookmarkcategory > ul > li > a:hover {
+.bookmarkcategory > div > ul > li > a:hover {
     color: #d6d6d7;
     text-decoration: none;
     position: relative;
@@ -233,4 +236,95 @@ body {
     font-size: 1.1em;
 }
 
+#dragable {
+    position: absolute;
+    z-index: 9;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    
+    #dragable.drag {
+    border-color: white;
+    box-shadow: 3px 6px 24px rgba(0, 0, 0, 0.5);
+    }
+    
+    #dragable #dragzone {
+    cursor: grabbing;
+    z-index: 10;
+    }
 
+#logo {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: #d6d6d7;
+    font-size: 1.5em;
+    position: absolute;
+    z-index: 1;
+    border: 0;
+    top: 31.8em;
+    width: 5em;
+    height: 5em;
+    margin-right: auto;
+    background-color: #323639;
+}
+
+#logo > div {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #d6d6d7;
+    z-index:0;
+    position: absolute;
+    height: 100%;
+    width: 0.5em;
+}
+
+#logo-text {
+    position: absolute;
+    z-index: 1;
+    top: 17.4em;
+    left: 0.2em;
+    width: 5em;
+    height: 5em;
+}
+
+
+#logo-text > h2 {
+    font-size: 5em;
+    position: relative;
+    z-index: 1;
+    top: 5.7em;
+    left: 0.2em;
+}
+
+#logo-text > h3 {
+    font-size: 2em;
+    position: relative;
+    z-index: 1;
+    top: 14em;
+    left: 0.5em;
+}
+
+#logobox {
+    width: 5em;
+    height: 5em;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+#logobox:hover {
+    opacity: 1;
+}
+#welcome {
+    /* divider centered */
+    position: absolute;
+    z-index: 12;
+    height: 100%;
+    width: 100%;
+    background-color: #202124;
+    /* align text in center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

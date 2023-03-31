@@ -9,6 +9,7 @@
     
 </head>
 <body>
+<script src="../js/onload.js"> </script>
  <div id="bodylayout">
     <div id="widgetalign">
         <div>
@@ -45,8 +46,12 @@
         </div>
 
         <div id="widgetalign">
-            <div class="bookmarkcategory">
+            <div id="dragable">
+            <header class="bookmarkcategory" id="dragzone">
+                <script src="../js/draggablediv.js"> </script>
                 <div id="top"></div>
+                <div id="bookmarks">
+                    <script src="../js/closebookmarks.js"></script>
                 <h2> Bookmarks </h2>
                     <ul>
                         <li> <a href="https://www.youtube.com/"> youtube </a></li>
@@ -60,9 +65,27 @@
                         <li> <a href="https://www.twitter.com/"> twitter </a> </li>
                         <li> <a href="https://www.facebook.com/"> facebook </a> </li>
                     </ul>
+                </header>
+            </div>
             </div>
         </div>
+        <div>
+        <div id="logobox">
+            <div id="logo">
+                <div>
+                </div>
+            </div>
+            <div id="logo-text">
+                <h2>.Cy</h2>
+                <h3>Startpage</h3>
+            </div>
+        </div>
+        </div>
+
+
  </div>
+
+
 
 </body>
 </html>
