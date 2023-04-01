@@ -17,7 +17,7 @@ body {
 
 #widgetalign {
     display: flex;
-    
+    align-items: end;
 }
 
 #timer-text {
@@ -178,13 +178,11 @@ body {
     color: #d6d6d7;
     font-size: 1.5em;
     position: absolute;
-    z-index: 1;
     border: 0;
     width: 8em;
     height: 23em;
-    top: 1.7em;
-    margin-left: 67.8em;
-    margin-right: auto;
+    top: -8.4em;
+    left: 31em;
     background-color: #323639;
 }
 
@@ -261,7 +259,6 @@ body {
     position: absolute;
     z-index: 1;
     border: 0;
-    top: 31.8em;
     width: 5em;
     height: 5em;
     margin-right: auto;
@@ -282,7 +279,6 @@ body {
 #logo-text {
     position: absolute;
     z-index: 1;
-    top: 17.4em;
     left: 0.2em;
     width: 5em;
     height: 5em;
@@ -291,25 +287,33 @@ body {
 
 #logo-text > h2 {
     font-size: 5em;
-    position: relative;
-    z-index: 1;
-    top: 5.7em;
+    position: absolute;
     left: 0.2em;
+    top: -0.35em;
 }
 
 #logo-text > h3 {
     font-size: 2em;
-    position: relative;
-    z-index: 1;
-    top: 14em;
+    position: absolute;
     left: 0.5em;
+    top: 1.89em;
 }
 
 #logobox {
+    position: relative;
     width: 5em;
     height: 5em;
     opacity: 0;
     transition: opacity 1s ease;
+    top: 30.4em;
+    left: 0.2em;
+}
+
+#logodiv {
+    position: absolute;
+    z-index: 1;
+    top: 24.4em;
+    left: 0.2em;
 }
 
 #logobox:hover {
