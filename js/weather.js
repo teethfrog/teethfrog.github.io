@@ -1,9 +1,11 @@
+
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(position => {
       const latitude = position.coords.latitude;
       const longitude = position.coords.longitude;
       
-      const apiKey = '93b24f49572941f1d765d3e4fe09ff9e';
+
+      const apiKey = {api};
       const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
   
 

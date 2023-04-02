@@ -81,7 +81,7 @@ body {
     position: relative;
     z-index: 1;
     top: 0.135em;
-    left: 1.42em;
+    left: 0.82em;
 }
 
 #weather-text > h3 {
@@ -89,7 +89,7 @@ body {
     position: relative;
     z-index: 1;
     top: 0.145em;
-    left: 1.75em;
+    left: 1.04em;
 }
 
 #weather-bg {
